@@ -1,0 +1,358 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;shell&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="shell">shell</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#scenes" class="toc-h1 toc-link" data-title="Scenes">Scenes</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-latest-scenes" class="toc-h2 toc-link" data-title="Get Latest Scenes">Get Latest Scenes</a>
+                  </li>
+                  <li>
+                    <a href="#query-scenes" class="toc-h2 toc-link" data-title="Query Scenes">Query Scenes</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='introduction'>Introduction</h1>
+<p>Welcome to ThePornDatabase API! You can use our API to access ThePornDatabase API endpoints, which can get information on scraped scenes from the largest porn producers!</p>
+
+<p>You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<h1 id='scenes'>Scenes</h1><h2 id='get-latest-scenes'>Get Latest Scenes</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://pdb1.herokuapp.com/scenes/"</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"paysite"</span><span class="p">:</span><span class="s2">"porndoe"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"site"</span><span class="p">:</span><span class="s2">"chicasloca"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"scene_id"</span><span class="p">:</span><span class="s2">"porndoe_chicasloca_12413"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"paysite_id"</span><span class="p">:</span><span class="s2">"12413"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"Bootyful first porn session"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"date"</span><span class="p">:</span><span class="s2">"2018-08-13T00:00:00.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"actors"</span><span class="p">:[</span><span class="s2">"Emilio Ardana"</span><span class="p">],</span><span class="w">
+    </span><span class="s2">"tags"</span><span class="p">:[</span><span class="s2">"Big Dick"</span><span class="p">,</span><span class="s2">"Big Tits"</span><span class="p">,</span><span class="s2">"Blonde"</span><span class="p">,</span><span class="s2">"Blowjob"</span><span class="p">,</span><span class="s2">"Cumshot"</span><span class="p">,</span><span class="s2">"Hardcore"</span><span class="p">,</span><span class="s2">"HD Videos"</span><span class="p">,</span><span class="s2">"Latina"</span><span class="p">],</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="s2">"Cheeky newbie Paola Guerra twerks her big booty on camera then sucks on Emilio Ardana's cock. He then drills that wet newbie pussy"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint returns the scenes released in the last seven days.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET https://pdb1.herokuapp.com/scenes/</code></p>
+<h2 id='query-scenes'>Query Scenes</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://pdb1.herokuapp.com/scenes/find"</span>
+  -X POST -H <span class="s2">"Content-Type: application/json"</span> -d <span class="s1">'{"site":"chicasloca"}'</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"paysite"</span><span class="p">:</span><span class="s2">"porndoe"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"site"</span><span class="p">:</span><span class="s2">"chicasloca"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"scene_id"</span><span class="p">:</span><span class="s2">"porndoe_chicasloca_12413"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"paysite_id"</span><span class="p">:</span><span class="s2">"12413"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"Bootyful first porn session"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"date"</span><span class="p">:</span><span class="s2">"2018-08-13T00:00:00.000Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"actors"</span><span class="p">:[</span><span class="s2">"Emilio Ardana"</span><span class="p">],</span><span class="w">
+    </span><span class="s2">"tags"</span><span class="p">:[</span><span class="s2">"Big Dick"</span><span class="p">,</span><span class="s2">"Big Tits"</span><span class="p">,</span><span class="s2">"Blonde"</span><span class="p">,</span><span class="s2">"Blowjob"</span><span class="p">,</span><span class="s2">"Cumshot"</span><span class="p">,</span><span class="s2">"Hardcore"</span><span class="p">,</span><span class="s2">"HD Videos"</span><span class="p">,</span><span class="s2">"Latina"</span><span class="p">],</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="s2">"Cheeky newbie Paola Guerra twerks her big booty on camera then sucks on Emilio Ardana's cock. He then drills that wet newbie pussy"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint queries all Scenes.</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET https://pdb1.herokuapp.com/find</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>paysite</td>
+<td>String</td>
+<td>The paysite in lowercase with no spaces (e.g: brazzers).</td>
+</tr>
+<tr>
+<td>site</td>
+<td>String</td>
+<td>The site in lowercase with no spaces (e.g: hotandmean).</td>
+</tr>
+<tr>
+<td>scene_id</td>
+<td>String</td>
+<td>An ID that uniquely identifies the scene.</td>
+</tr>
+<tr>
+<td>paysite_id</td>
+<td>String</td>
+<td>The ID used by the paysite to uniquely identify the scene.</td>
+</tr>
+<tr>
+<td>title</td>
+<td>String</td>
+<td>The title of the scene.</td>
+</tr>
+<tr>
+<td>date</td>
+<td>String</td>
+<td>The date the scene was released in &#39;YYYY-MM-DD&#39; format.</td>
+</tr>
+<tr>
+<td>actors</td>
+<td>[String]</td>
+<td>A list of actors that performed in the scene.</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>[String]</td>
+<td>A list of tags that the paysite assigned to the scene.</td>
+</tr>
+<tr>
+<td>description</td>
+<td>String</td>
+<td>The description of the scene from the paysite.</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+You must provide atleast one of the parameters to get results!
+</aside>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="shell">shell</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
